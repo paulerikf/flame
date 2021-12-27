@@ -21,7 +21,7 @@ NUM_JOBS=$((`getconf _NPROCESSORS_ONLN` - 1))
 mkdir -p ${2}/lib/pkgconfig
 
 rm -rf ${1}/eigen
-hg clone https://bitbucket.org/eigen/eigen ${1}/eigen
+hg clone https://gitlab.com/libeigen/eigen ${1}/eigen
 cd ${1}/eigen
 hg checkout 3.2.10
 
